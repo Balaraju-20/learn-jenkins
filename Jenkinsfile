@@ -1,5 +1,5 @@
 pipeline {
-/*     agent {
+      agent {
         label 'AGENT-1'
     }
     options{
@@ -9,8 +9,8 @@ pipeline {
     }
     environment {
         DEBUG = 'true'
-    }
- */
+    } 
+ 
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
         text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
